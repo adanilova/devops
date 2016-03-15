@@ -83,21 +83,13 @@
           "size": "16384",
           "refcount": "1"
         },
-        "dm_multipath": {
-          "size": "24576",
+        "snd_intel8x0": {
+          "size": "40960",
           "refcount": "0"
         },
         "glue_helper": {
           "size": "16384",
           "refcount": "1"
-        },
-        "scsi_dh": {
-          "size": "16384",
-          "refcount": "1"
-        },
-        "snd_intel8x0": {
-          "size": "40960",
-          "refcount": "0"
         },
         "ablk_helper": {
           "size": "16384",
@@ -107,6 +99,10 @@
           "size": "20480",
           "refcount": "3"
         },
+        "dm_multipath": {
+          "size": "24576",
+          "refcount": "0"
+        },
         "snd_ac97_codec": {
           "size": "131072",
           "refcount": "1"
@@ -115,17 +111,21 @@
           "size": "16384",
           "refcount": "1"
         },
+        "scsi_dh": {
+          "size": "16384",
+          "refcount": "1"
+        },
         "snd_pcm": {
           "size": "106496",
           "refcount": "2"
         },
-        "serio_raw": {
-          "size": "16384",
-          "refcount": "0"
-        },
         "snd_timer": {
           "size": "32768",
           "refcount": "1"
+        },
+        "serio_raw": {
+          "size": "16384",
+          "refcount": "0"
         },
         "snd": {
           "size": "86016",
@@ -139,6 +139,14 @@
           "size": "24576",
           "refcount": "0"
         },
+        "sbs": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "sbshc": {
+          "size": "16384",
+          "refcount": "1"
+        },
         "shpchp": {
           "size": "40960",
           "refcount": "0"
@@ -147,24 +155,12 @@
           "size": "24576",
           "refcount": "1"
         },
-        "sbs": {
-          "size": "16384",
-          "refcount": "0"
-        },
-        "pvpanic": {
-          "size": "16384",
-          "refcount": "0"
-        },
-        "sbshc": {
-          "size": "16384",
-          "refcount": "1"
-        },
         "nfsd": {
           "size": "294912",
           "refcount": "2"
         },
-        "parport_pc": {
-          "size": "32768",
+        "pvpanic": {
+          "size": "16384",
           "refcount": "0"
         },
         "auth_rpcgss": {
@@ -177,6 +173,10 @@
         },
         "nfs": {
           "size": "245760",
+          "refcount": "0"
+        },
+        "parport_pc": {
+          "size": "32768",
           "refcount": "0"
         },
         "lockd": {
@@ -195,12 +195,12 @@
           "size": "65536",
           "refcount": "1"
         },
-        "lp": {
-          "size": "20480",
-          "refcount": "0"
-        },
         "mac_hid": {
           "size": "16384",
+          "refcount": "0"
+        },
+        "lp": {
+          "size": "20480",
           "refcount": "0"
         },
         "parport": {
@@ -234,26 +234,26 @@
         "free": "786428kB"
       },
       "total": "368048kB",
-      "free": "128704kB",
-      "buffers": "14936kB",
-      "cached": "66360kB",
-      "active": "148568kB",
-      "inactive": "40272kB",
-      "dirty": "256kB",
+      "free": "129220kB",
+      "buffers": "15768kB",
+      "cached": "74052kB",
+      "active": "149608kB",
+      "inactive": "47208kB",
+      "dirty": "80kB",
       "writeback": "0kB",
-      "anon_pages": "107556kB",
-      "mapped": "18288kB",
-      "slab": "26944kB",
-      "slab_reclaimable": "14620kB",
-      "slab_unreclaim": "12324kB",
-      "page_tables": "3932kB",
+      "anon_pages": "107008kB",
+      "mapped": "18500kB",
+      "slab": "27096kB",
+      "slab_reclaimable": "14860kB",
+      "slab_unreclaim": "12236kB",
+      "page_tables": "3724kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "970452kB",
-      "committed_as": "341116kB",
+      "committed_as": "347212kB",
       "vmalloc_total": "34359738367kB",
-      "vmalloc_used": "24508kB",
-      "vmalloc_chunk": "34359710620kB"
+      "vmalloc_used": "24412kB",
+      "vmalloc_chunk": "34359711180kB"
     },
     "cpu": {
       "0": {
@@ -451,16 +451,16 @@
           "eth0": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "91322",
-              "packets": "624",
+              "bytes": "92022",
+              "packets": "632",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "107366",
-              "packets": "1018",
+              "bytes": "108786",
+              "packets": "1027",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -547,8 +547,8 @@
           "kb_available": "36148",
           "percent_used": "2%",
           "total_inodes": "46006",
-          "inodes_used": "440",
-          "inodes_available": "45566",
+          "inodes_used": "439",
+          "inodes_available": "45567",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -564,12 +564,12 @@
         },
         "/dev/mapper/ubuntu--14--vg-root": {
           "kb_size": "40129116",
-          "kb_used": "1410004",
-          "kb_available": "36657596",
+          "kb_used": "1435148",
+          "kb_available": "36632452",
           "percent_used": "4%",
           "total_inodes": "2559088",
-          "inodes_used": "58849",
-          "inodes_available": "2500239",
+          "inodes_used": "59625",
+          "inodes_available": "2499463",
           "inodes_percent_used": "3%",
           "fs_type": "ext4",
           "mount_options": [
@@ -590,10 +590,9 @@
           "inodes_used": "2",
           "inodes_available": "46004",
           "inodes_percent_used": "1%",
-          "fs_type": "debugfs",
+          "fs_type": "pstore",
           "mount_options": [
-            "rw",
-            "relatime"
+            "rw"
           ],
           "mounts": [
             "/sys/fs/cgroup",
@@ -603,8 +602,7 @@
             "/sys/fs/fuse/connections",
             "/sys/kernel/debug",
             "/sys/kernel/security",
-            "/sys/fs/pstore",
-            "/var/lib/ureadahead/debugfs"
+            "/sys/fs/pstore"
           ]
         },
         "/dev/sda1": {
@@ -627,9 +625,9 @@
         },
         "vagrant": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -644,11 +642,11 @@
             "/vagrant"
           ]
         },
-        "v-csr-e17f5a01b": {
+        "v-csr-5976259db": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -660,14 +658,14 @@
             "gid=900"
           ],
           "mounts": [
-            "/tmp/vagrant-chef/90cabbe92a2f7d20d3a87db439481323/roles"
+            "/tmp/vagrant-chef/6934d3d31102d6a599c853457f688431/roles"
           ]
         },
-        "v-csn-b4589d637": {
+        "v-csn-8ce83a4e5": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -679,14 +677,14 @@
             "gid=900"
           ],
           "mounts": [
-            "/tmp/vagrant-chef/6eb7dea27a7ac2d7c504ded197e75478/nodes"
+            "/tmp/vagrant-chef/ea7964763b9f45a19aab2f4c06113b4f/nodes"
           ]
         },
-        "v-csdb-40a755304": {
+        "v-csdb-0aa7a6c36": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -698,14 +696,14 @@
             "gid=900"
           ],
           "mounts": [
-            "/tmp/vagrant-chef/99fe1a2a856ffacb09d4c863e3e5066e/data_bags"
+            "/tmp/vagrant-chef/d2388c7676d1658c92e2c8074108c9a9/data_bags"
           ]
         },
-        "v-csc-26b052ecf": {
+        "v-csc-f377bc6ff": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -717,7 +715,7 @@
             "gid=900"
           ],
           "mounts": [
-            "/tmp/vagrant-chef/639ff9dd53b35007f808cca1ef04c4da/cookbooks"
+            "/tmp/vagrant-chef/ab69f40787ae71941e7351c92c76b3ef/cookbooks"
           ]
         },
         "proc": {
@@ -835,8 +833,8 @@
           "kb_available": "36148",
           "percent_used": "2%",
           "total_inodes": "46006",
-          "inodes_used": "440",
-          "inodes_available": "45566",
+          "inodes_used": "439",
+          "inodes_available": "45567",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -852,12 +850,12 @@
         },
         "/": {
           "kb_size": "40129116",
-          "kb_used": "1410004",
-          "kb_available": "36657596",
+          "kb_used": "1435148",
+          "kb_available": "36632452",
           "percent_used": "4%",
           "total_inodes": "2559088",
-          "inodes_used": "58849",
-          "inodes_available": "2500239",
+          "inodes_used": "59625",
+          "inodes_available": "2499463",
           "inodes_percent_used": "3%",
           "fs_type": "ext4",
           "mount_options": [
@@ -888,12 +886,12 @@
         },
         "/run/lock": {
           "kb_size": "5120",
-          "kb_used": "4",
-          "kb_available": "5116",
-          "percent_used": "1%",
+          "kb_used": "0",
+          "kb_available": "5120",
+          "percent_used": "0%",
           "total_inodes": "46006",
-          "inodes_used": "3",
-          "inodes_available": "46003",
+          "inodes_used": "2",
+          "inodes_available": "46004",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -968,9 +966,9 @@
         },
         "/vagrant": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -985,11 +983,11 @@
             "vagrant"
           ]
         },
-        "/tmp/vagrant-chef/90cabbe92a2f7d20d3a87db439481323/roles": {
+        "/tmp/vagrant-chef/6934d3d31102d6a599c853457f688431/roles": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1001,14 +999,14 @@
             "gid=900"
           ],
           "devices": [
-            "v-csr-e17f5a01b"
+            "v-csr-5976259db"
           ]
         },
-        "/tmp/vagrant-chef/6eb7dea27a7ac2d7c504ded197e75478/nodes": {
+        "/tmp/vagrant-chef/ea7964763b9f45a19aab2f4c06113b4f/nodes": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1020,14 +1018,14 @@
             "gid=900"
           ],
           "devices": [
-            "v-csn-b4589d637"
+            "v-csn-8ce83a4e5"
           ]
         },
-        "/tmp/vagrant-chef/99fe1a2a856ffacb09d4c863e3e5066e/data_bags": {
+        "/tmp/vagrant-chef/d2388c7676d1658c92e2c8074108c9a9/data_bags": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1039,14 +1037,14 @@
             "gid=900"
           ],
           "devices": [
-            "v-csdb-40a755304"
+            "v-csdb-0aa7a6c36"
           ]
         },
-        "/tmp/vagrant-chef/639ff9dd53b35007f808cca1ef04c4da/cookbooks": {
+        "/tmp/vagrant-chef/ab69f40787ae71941e7351c92c76b3ef/cookbooks": {
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1058,7 +1056,7 @@
             "gid=900"
           ],
           "devices": [
-            "v-csc-26b052ecf"
+            "v-csc-f377bc6ff"
           ]
         },
         "/proc": {
@@ -1156,16 +1154,6 @@
           "devices": [
             "systemd"
           ]
-        },
-        "/var/lib/ureadahead/debugfs": {
-          "fs_type": "debugfs",
-          "mount_options": [
-            "rw",
-            "relatime"
-          ],
-          "devices": [
-            "none"
-          ]
         }
       },
       "by_pair": {
@@ -1194,8 +1182,8 @@
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "46006",
-          "inodes_used": "440",
-          "inodes_available": "45566",
+          "inodes_used": "439",
+          "inodes_available": "45567",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1209,13 +1197,13 @@
         "/dev/mapper/ubuntu--14--vg-root,/": {
           "device": "/dev/mapper/ubuntu--14--vg-root",
           "kb_size": "40129116",
-          "kb_used": "1410004",
-          "kb_available": "36657596",
+          "kb_used": "1435148",
+          "kb_available": "36632452",
           "percent_used": "4%",
           "mount": "/",
           "total_inodes": "2559088",
-          "inodes_used": "58849",
-          "inodes_available": "2500239",
+          "inodes_used": "59625",
+          "inodes_available": "2499463",
           "inodes_percent_used": "3%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1243,13 +1231,13 @@
         "none,/run/lock": {
           "device": "none",
           "kb_size": "5120",
-          "kb_used": "4",
-          "kb_available": "5116",
-          "percent_used": "1%",
+          "kb_used": "0",
+          "kb_available": "5120",
+          "percent_used": "0%",
           "mount": "/run/lock",
           "total_inodes": "46006",
-          "inodes_used": "3",
-          "inodes_available": "46003",
+          "inodes_used": "2",
+          "inodes_available": "46004",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1319,9 +1307,9 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
           "mount": "/vagrant",
           "total_inodes": "4096",
           "inodes_used": "0",
@@ -1334,13 +1322,13 @@
             "gid=900"
           ]
         },
-        "v-csr-e17f5a01b,/tmp/vagrant-chef/90cabbe92a2f7d20d3a87db439481323/roles": {
-          "device": "v-csr-e17f5a01b",
+        "v-csr-5976259db,/tmp/vagrant-chef/6934d3d31102d6a599c853457f688431/roles": {
+          "device": "v-csr-5976259db",
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
-          "mount": "/tmp/vagrant-chef/90cabbe92a2f7d20d3a87db439481323/roles",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
+          "mount": "/tmp/vagrant-chef/6934d3d31102d6a599c853457f688431/roles",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1352,13 +1340,13 @@
             "gid=900"
           ]
         },
-        "v-csn-b4589d637,/tmp/vagrant-chef/6eb7dea27a7ac2d7c504ded197e75478/nodes": {
-          "device": "v-csn-b4589d637",
+        "v-csn-8ce83a4e5,/tmp/vagrant-chef/ea7964763b9f45a19aab2f4c06113b4f/nodes": {
+          "device": "v-csn-8ce83a4e5",
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
-          "mount": "/tmp/vagrant-chef/6eb7dea27a7ac2d7c504ded197e75478/nodes",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
+          "mount": "/tmp/vagrant-chef/ea7964763b9f45a19aab2f4c06113b4f/nodes",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1370,13 +1358,13 @@
             "gid=900"
           ]
         },
-        "v-csdb-40a755304,/tmp/vagrant-chef/99fe1a2a856ffacb09d4c863e3e5066e/data_bags": {
-          "device": "v-csdb-40a755304",
+        "v-csdb-0aa7a6c36,/tmp/vagrant-chef/d2388c7676d1658c92e2c8074108c9a9/data_bags": {
+          "device": "v-csdb-0aa7a6c36",
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
-          "mount": "/tmp/vagrant-chef/99fe1a2a856ffacb09d4c863e3e5066e/data_bags",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
+          "mount": "/tmp/vagrant-chef/d2388c7676d1658c92e2c8074108c9a9/data_bags",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1388,13 +1376,13 @@
             "gid=900"
           ]
         },
-        "v-csc-26b052ecf,/tmp/vagrant-chef/639ff9dd53b35007f808cca1ef04c4da/cookbooks": {
-          "device": "v-csc-26b052ecf",
+        "v-csc-f377bc6ff,/tmp/vagrant-chef/ab69f40787ae71941e7351c92c76b3ef/cookbooks": {
+          "device": "v-csc-f377bc6ff",
           "kb_size": "487374848",
-          "kb_used": "96690596",
-          "kb_available": "390684252",
-          "percent_used": "20%",
-          "mount": "/tmp/vagrant-chef/639ff9dd53b35007f808cca1ef04c4da/cookbooks",
+          "kb_used": "100806904",
+          "kb_available": "386567944",
+          "percent_used": "21%",
+          "mount": "/tmp/vagrant-chef/ab69f40787ae71941e7351c92c76b3ef/cookbooks",
           "total_inodes": "4096",
           "inodes_used": "0",
           "inodes_available": "4096",
@@ -1511,15 +1499,6 @@
         },
         "/dev/sr0,": {
           "device": "/dev/sr0"
-        },
-        "none,/var/lib/ureadahead/debugfs": {
-          "device": "none",
-          "mount": "/var/lib/ureadahead/debugfs",
-          "fs_type": "debugfs",
-          "mount_options": [
-            "rw",
-            "relatime"
-          ]
         }
       }
     },
@@ -1547,8 +1526,8 @@
         "percent_used": "2%",
         "mount": "/run",
         "total_inodes": "46006",
-        "inodes_used": "440",
-        "inodes_available": "45566",
+        "inodes_used": "439",
+        "inodes_available": "45567",
         "inodes_percent_used": "1%",
         "fs_type": "tmpfs",
         "mount_options": [
@@ -1561,13 +1540,13 @@
       },
       "/dev/mapper/ubuntu--14--vg-root": {
         "kb_size": "40129116",
-        "kb_used": "1410004",
-        "kb_available": "36657596",
+        "kb_used": "1435148",
+        "kb_available": "36632452",
         "percent_used": "4%",
         "mount": "/",
         "total_inodes": "2559088",
-        "inodes_used": "58849",
-        "inodes_available": "2500239",
+        "inodes_used": "59625",
+        "inodes_available": "2499463",
         "inodes_percent_used": "3%",
         "fs_type": "ext4",
         "mount_options": [
@@ -1609,9 +1588,9 @@
       },
       "vagrant": {
         "kb_size": "487374848",
-        "kb_used": "96690596",
-        "kb_available": "390684252",
-        "percent_used": "20%",
+        "kb_used": "100806904",
+        "kb_available": "386567944",
+        "percent_used": "21%",
         "mount": "/vagrant",
         "total_inodes": "4096",
         "inodes_used": "0",
@@ -1624,12 +1603,12 @@
           "gid=900"
         ]
       },
-      "v-csr-e17f5a01b": {
+      "v-csr-5976259db": {
         "kb_size": "487374848",
-        "kb_used": "96690596",
-        "kb_available": "390684252",
-        "percent_used": "20%",
-        "mount": "/tmp/vagrant-chef/90cabbe92a2f7d20d3a87db439481323/roles",
+        "kb_used": "100806904",
+        "kb_available": "386567944",
+        "percent_used": "21%",
+        "mount": "/tmp/vagrant-chef/6934d3d31102d6a599c853457f688431/roles",
         "total_inodes": "4096",
         "inodes_used": "0",
         "inodes_available": "4096",
@@ -1641,12 +1620,12 @@
           "gid=900"
         ]
       },
-      "v-csn-b4589d637": {
+      "v-csn-8ce83a4e5": {
         "kb_size": "487374848",
-        "kb_used": "96690596",
-        "kb_available": "390684252",
-        "percent_used": "20%",
-        "mount": "/tmp/vagrant-chef/6eb7dea27a7ac2d7c504ded197e75478/nodes",
+        "kb_used": "100806904",
+        "kb_available": "386567944",
+        "percent_used": "21%",
+        "mount": "/tmp/vagrant-chef/ea7964763b9f45a19aab2f4c06113b4f/nodes",
         "total_inodes": "4096",
         "inodes_used": "0",
         "inodes_available": "4096",
@@ -1658,12 +1637,12 @@
           "gid=900"
         ]
       },
-      "v-csdb-40a755304": {
+      "v-csdb-0aa7a6c36": {
         "kb_size": "487374848",
-        "kb_used": "96690596",
-        "kb_available": "390684252",
-        "percent_used": "20%",
-        "mount": "/tmp/vagrant-chef/99fe1a2a856ffacb09d4c863e3e5066e/data_bags",
+        "kb_used": "100806904",
+        "kb_available": "386567944",
+        "percent_used": "21%",
+        "mount": "/tmp/vagrant-chef/d2388c7676d1658c92e2c8074108c9a9/data_bags",
         "total_inodes": "4096",
         "inodes_used": "0",
         "inodes_available": "4096",
@@ -1675,12 +1654,12 @@
           "gid=900"
         ]
       },
-      "v-csc-26b052ecf": {
+      "v-csc-f377bc6ff": {
         "kb_size": "487374848",
-        "kb_used": "96690596",
-        "kb_available": "390684252",
-        "percent_used": "20%",
-        "mount": "/tmp/vagrant-chef/639ff9dd53b35007f808cca1ef04c4da/cookbooks",
+        "kb_used": "100806904",
+        "kb_available": "386567944",
+        "percent_used": "21%",
+        "mount": "/tmp/vagrant-chef/ab69f40787ae71941e7351c92c76b3ef/cookbooks",
         "total_inodes": "4096",
         "inodes_used": "0",
         "inodes_available": "4096",
@@ -1751,10 +1730,10 @@
         "uuid": "2d180dd2-9894-4e63-b0d2-96876c0b13f8"
       }
     },
-    "uptime_seconds": 24,
-    "uptime": "24 seconds",
-    "idletime_seconds": 18,
-    "idletime": "18 seconds",
+    "uptime_seconds": 65,
+    "uptime": "1 minutes 05 seconds",
+    "idletime_seconds": 59,
+    "idletime": "59 seconds",
     "root_group": "root",
     "chef_packages": {
       "chef": {
@@ -1965,7 +1944,7 @@
     "command": {
       "ps": "ps -ef"
     },
-    "ohai_time": 1457687209.6356213,
+    "ohai_time": 1458031474.296301,
     "etc": {
       "passwd": {
         "root": {
@@ -2613,6 +2592,7 @@
     }
   },
   "run_list": [
+    "recipe[app_demo]",
     "role[application]"
   ]
 }
