@@ -1,0 +1,17 @@
+{
+  "name": "wordpress",
+  "description": "wordpress role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[sysctl]",
+    "recipe[nginx::official-repo]",
+    "recipe[nginx]",
+    "recipe[app_demo]",
+    "recipe[app_demo::wordpress]"
+    ],
+    "env_run_lists": {
+    }
+}
