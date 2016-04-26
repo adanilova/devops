@@ -1,5 +1,6 @@
 include_recipe 'app_demo::database'
 include_recipe 'app_demo::app-server'
+include_recipe 'wordpress_auth_lwrp'
 
 package 'unzip'
 
@@ -29,4 +30,9 @@ template "/srv/wordpress-#{version}/wordpress/wp-config.php" do
   source 'wp-config.php.erb'
   variables( password: Chef::EncryptedDataBagItem.load('passwords', 'mysql')['password']
   )
+end
+
+wordpress_auth 'stacy' do
+  action: create
+  password: "111"
 end
