@@ -1,0 +1,16 @@
+template '/etc/authfile' do
+  source 'basic_auth.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  variables :partials => {
+    'partial_name_1.txt.erb' => 'message',
+    'partial_name_2.txt.erb' => 'message',
+    'partial_name_3.txt.erb' => 'message'
+  }
+end
+
+<% @partials.each do |partial, message| %>
+  Here is <%= partial %>
+  <%= render partial, :variables => {:message => message} %>
+<% end %>
