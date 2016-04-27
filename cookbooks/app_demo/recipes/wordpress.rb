@@ -32,7 +32,9 @@ template "/srv/wordpress-#{version}/wordpress/wp-config.php" do
   )
 end
 
-basic_auth 'stacy' do
+creds = {'stacy' => '123', 'applejack' => 'equestria'}
+
+basic_auth '/etc/authfile' do
   action :create
-  password '11cool'
+  usernames creds
 end

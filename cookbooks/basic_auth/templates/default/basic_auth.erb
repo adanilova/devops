@@ -1,4 +1,3 @@
-<% @username.each do |username, password| %>
-  Here is <%= username %>
-  <%= render username, :variables => {:password => password} %>
+<% @u.each do |username, password| %>
+  <%= username %>:<%= password %>
 <% end %>
