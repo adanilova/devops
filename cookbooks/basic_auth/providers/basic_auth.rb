@@ -10,11 +10,23 @@ action :create do
       Chef::Log.info "#{ @new_resource } already exists - nothing to do."
   else
     template 'basic_auth' do
-      
+
     end
   #  add user and hash pass into basic auth file
   end
  # a mix of built-in Chef resources and Ruby
+end
+
+template '/etc/authfile' do
+  source 'basic_auth.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+  variables :username => {
+    'username1.txt.erb' => 'message',
+    'username2.txt.erb' => 'message',
+    'username3.txt.erb' => 'message'
+  }
 end
 
 # action :delete do
