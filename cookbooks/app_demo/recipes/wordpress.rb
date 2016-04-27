@@ -1,6 +1,6 @@
 include_recipe 'app_demo::database'
 include_recipe 'app_demo::app-server'
-include_recipe 'wordpress_auth_lwrp'
+#include_providers 'basic_auth::basic_auth'
 
 package 'unzip'
 
@@ -32,7 +32,7 @@ template "/srv/wordpress-#{version}/wordpress/wp-config.php" do
   )
 end
 
-wordpress_auth 'stacy' do
-  action: create
-  password: "111"
+basic_auth 'stacy' do
+  action :create
+  password '11cool'
 end

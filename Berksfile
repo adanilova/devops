@@ -13,3 +13,5 @@ cookbook 'php-fpm', '~> 0.7.5'
 cookbook 'database', '~> 5.0.1'
 
 cookbook 'mysql2_chef_gem', '~> 1.0.2'
+
+cookbook 'basic_auth', path: './cookbooks/basic_auth'

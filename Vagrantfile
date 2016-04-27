@@ -23,6 +23,7 @@ Vagrant.configure("2") do |config|
       chef.log_level = :info
       chef.cookbooks_path = "cookbooks"
       chef.roles_path = "roles"
+      #chef.provider_path = "providers"
       chef.add_recipe "app_demo"
       chef.data_bags_path = "data_bags"
       chef.encrypted_data_bag_secret_key_path =".chef/encrypted_data_bag_secret"
@@ -31,6 +32,7 @@ Vagrant.configure("2") do |config|
       #chef.add_role "application"
       chef.add_role "wordpress"
       chef.nodes_path = "nodes"
+      #chef.add_providers "basic_auth"
     end
   end
 end

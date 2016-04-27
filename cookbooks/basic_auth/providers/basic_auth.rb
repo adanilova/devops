@@ -1,33 +1,37 @@
-resource_name :basic_auth
+# => resource_name :basic_auth
 
 # property :username, kind_of: String, name_property: true
 # property :password, kind_of: String, required: true
 # property :authfile, kind_of: String, default: "/etc/authfile"
 
 action :create do
-  if user_in_file?
-    if password_matches?
-      Chef::Log.info "#{ @new_resource } already exists - nothing to do."
-  else
-    template 'basic_auth' do
-
-    end
-  #  add user and hash pass into basic auth file
-  end
- # a mix of built-in Chef resources and Ruby
-end
-
-template '/etc/authfile' do
+ template '/etc/authfile' do
   source 'basic_auth.erb'
   owner 'root'
   group 'root'
   mode '0755'
   variables :username => {
-    'username1.txt.erb' => 'message',
-    'username2.txt.erb' => 'message',
-    'username3.txt.erb' => 'message'
+    'username1.txt.erb' => 'password',
+    'username2.txt.erb' => 'password',
+    'username3.txt.erb' => 'password'
   }
+ end
 end
+
+
+
+# action :create do
+#   if user_in_file?
+#     if password_matches?
+#       Chef::Log.info "#{ @new_resource } already exists - nothing to do."
+#   else
+#
+#   #  add user and hash pass into basic auth file
+#   end
+#  # a mix of built-in Chef resources and Ruby
+# end
+
+
 
 # action :delete do
 #   if user does not exist
@@ -36,13 +40,13 @@ end
 #     # delete user and pass
 # end
 
-def password_matches?(filename,username,password,hash)
-  break
-end
-
-def user_in_file?(username)
-  break
-end
+# def password_matches?(filename,username,password,hash)
+#   break
+# end
+#
+# def user_in_file?(username)
+#   break
+# end
 
 # как на рубях add/delete строки в файл и поработать со строками
 # irb
